@@ -1,28 +1,50 @@
-html {
-	min-height: 100%;
-	background-image: url('https://ik.imagekit.io/uhs4ijaug6/clarisse-meyer-xXiKQ2AavlY-unsplash_vg_D6cyBaMF.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
+:root {
+    --full-screen: calc(100vh - 56px);
 }
-
-#navbar {
-	opacity: 1;
-}
-
-div.row {
-	background-color: rgba(255, 255, 255, 0.8);
-	border-radius: 10px;
-	padding: 10px;
-	margin: 10px;
-}
-
 body {
-	background: transparent;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(19, 56, 88);
 }
 
-.nav-item :hover {
-	background-color: rgb(218, 157, 65);
-	border-radius: 10%;
+.satisfy {
+    font-family: 'Satisfy', cursive;
 }
+
+.dotme {
+    /* font-family: 'Roboto', sans-serif; */
+    color: cornflowerblue;
+}
+
+.custom-navbar {
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+
+#title {
+    height: var(--full-screen);
+    background-image: url("../static/images/bg.jpg");
+    background-position: center;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
