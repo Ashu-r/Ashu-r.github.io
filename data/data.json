@@ -1,0 +1,29 @@
+{
+	"about": "Hello there! My name is Ashutosh Randive and I'm a fullstack developer. I am very eager and enthusiastic to learn about new technologies and add to my knowledge. Currently I'm working on technologies like React, Vue and Django. I wish to further expand my knowledge about various technologies and the computer science.",
+	"experience": [
+		{
+			"organization": "Inkoop",
+			"title": "Software developer",
+			"description": "Working as a software developer. Working with VueJS, React, Django, frontend automation. Working as a Frontend developer for leading websites.",
+			"location": "Bengaluru, India",
+			"startDate": "February 2022",
+			"endDate": "Present"
+		},
+		{
+			"organization": "Inkoop",
+			"title": "Javascript intern",
+			"description": "Worked with frontend technologies such as VueJs, React Native, React as a JavaScript intern.",
+			"location": "Bengaluru, India (WFH)",
+			"startDate": "September 2021",
+			"endDate": "February 2022"
+		}
+	],
+	"education": [
+		{
+			"university": "Babasaheb Ambedkar Technological University",
+			"degree": "Bachelor of Technology",
+			"specialization": "Computer Science Engineering",
+			"year": "2018-2022"
+		}
+	]
+}

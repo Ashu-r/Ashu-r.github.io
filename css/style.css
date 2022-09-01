@@ -1,62 +1,126 @@
-:root {
-    --full-screen: calc(100vh);
-}
 body {
-    font-family: 'Roboto', sans-serif;
-    /* background-color: rgb(19, 56, 88); */
+  font-family: 'Roboto', sans-serif;
+  /* background-color: rgb(19, 56, 88); */
 }
+
 body .section:nth-child(even) {
-    background-color: #282c34;
+  background-color: #282c34;
 }
 
 body .section:nth-child(odd) {
-    background-color: #c678dd;
+  background-color: #c678dd;
 }
 
-
 .satisfy {
-    font-family: 'Satisfy', cursive;
+  font-family: 'Satisfy', cursive;
 }
 
 .dotme {
-    /* font-family: 'Roboto', sans-serif; */
-    color: cornflowerblue;
+  /* font-family: 'Roboto', sans-serif; */
+  color: cornflowerblue;
 }
 
 .custom-navbar {
-    background-color: #fbf0ff;
-    border-radius: 2px 2px 6px 6px;
-    position: fixed;
-    top: 0;
+  background-color: #fbf0ff;
+  border-radius: 2px 2px 6px 6px;
+  position: fixed;
+  top: 0;
 }
 
 #title {
-    height: var(--full-screen);
-    background-color: #282c34;
+  height: calc(100vh);
+  background-color: #282c34;
 }
+
 .text-1dark {
-    color: #282c34;
+  color: #282c34;
+}
+
+.bg-1dark {
+  background-color: #282c34 !important;
 }
 
 .typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: .15em solid orange; The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+}
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from {
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+}
+@keyframes blink-caret {
+  from {
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+}
+
+.line div {
+  width: 4px;
+  min-height: 1px;
+  background-color: white;
+  position: relative;
+  height: 100%;
+}
+
+.line div:nth-child(2)::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 99px;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: -7.5px;
+  border: 2px solid rgba(207, 200, 200, 0.5);
+}
+
+.exp-left, .exp-body {
+  border: 1px solid cornflowerblue;
+  border-radius: 4px;
+}
+
+.exp-title {
+  border-bottom: 1px solid cornflowerblue;
+}
+/*# sourceMappingURL=style.css.map */
