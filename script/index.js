@@ -72,11 +72,17 @@ async function fetchData() {
 		let item = data.education[i];
 		const eduDiv = education.cloneNode(true);
 		if (i === 0) {
-			eduDiv.querySelector('.line-1').classList.add('bg-1dark');
-		} else if (i === data.education.length - 1) {
-			eduDiv.querySelector('.line-2').classList.add('bg-1dark');
+			eduDiv.querySelector('.line-1').classList.add('bg-2');
+		}
+		if (i === data.education.length - 1) {
+			eduDiv.querySelector('.line-2').classList.add('bg-2');
 		}
 		eduDiv.classList.remove('d-none');
+		eduDiv.querySelector('.edu-timeline').innerHTML = item.year;
+		eduDiv.querySelector('.edu-location').innerHTML = item.location;
+		eduDiv.querySelector('.edu-description').innerHTML = item.specialization;
+		eduDiv.querySelector('.edu-org').innerHTML = item.university;
+		eduDiv.querySelector('.edu-title').innerHTML = item.degree;
 
 		education.parentElement.appendChild(eduDiv);
 	}

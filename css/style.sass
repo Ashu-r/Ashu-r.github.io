@@ -1,22 +1,24 @@
 
 $full-screen: calc(100vh)
+$secondary-color: #c678dd
+$dark-color: #282c34
 
 body
     font-family: 'Roboto', sans-serif
     /* background-color: rgb(19, 56, 88); */
 
 body .section:nth-child(even)
-    background-color: #282c34
+    background-color: $dark-color
 
 body .section:nth-child(odd)
-    background-color: #c678dd
+    background-color: $secondary-color
 
 .satisfy
     font-family: 'Satisfy', cursive
 
 .dotme
     /* font-family: 'Roboto', sans-serif; */
-    color: cornflowerblue
+    color: $secondary-color
 
 .custom-navbar
     background-color: #fbf0ff
@@ -26,12 +28,14 @@ body .section:nth-child(odd)
 
 #title
     height: $full-screen
-    background-color: #282c34
+    background-color: $dark-color
 
 .text-1dark
-    color: #282c34
+    color: $dark-color !important
 .bg-1dark
-    background-color: #282c34 !important
+    background-color: $dark-color !important
+.bg-2
+    background-color: $secondary-color !important
 .typewriter
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: .15em solid orange; The typwriter cursor */
@@ -77,9 +81,22 @@ body .section:nth-child(odd)
         border: 2px solid rgba(207, 200, 200, 0.5)
 
 .exp-left, .exp-body
-    border: 1px solid cornflowerblue;
+    border: 1px solid $secondary-color;
     border-radius: 4px;
 
+.edu-left, .edu-body
+    border: 1px solid $dark-color
+    border-radius: 4px
+
+.edu-org
+    border-bottom: 1px solid $dark-color
+
 .exp-title
-    border-bottom: 1px solid cornflowerblue;
+    border-bottom: 1px solid $secondary-color;
     
+.project
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    &:hover,&:focus
+        box-shadow: 0 0 10px 0 $secondary-color
+        cursor: pointer

@@ -17,7 +17,7 @@ body .section:nth-child(odd) {
 
 .dotme {
   /* font-family: 'Roboto', sans-serif; */
-  color: cornflowerblue;
+  color: #c678dd;
 }
 
 .custom-navbar {
@@ -33,11 +33,15 @@ body .section:nth-child(odd) {
 }
 
 .text-1dark {
-  color: #282c34;
+  color: #282c34 !important;
 }
 
 .bg-1dark {
   background-color: #282c34 !important;
+}
+
+.bg-2 {
+  background-color: #c678dd !important;
 }
 
 .typewriter {
@@ -116,11 +120,31 @@ body .section:nth-child(odd) {
 }
 
 .exp-left, .exp-body {
-  border: 1px solid cornflowerblue;
+  border: 1px solid #c678dd;
   border-radius: 4px;
 }
 
+.edu-left, .edu-body {
+  border: 1px solid #282c34;
+  border-radius: 4px;
+}
+
+.edu-org {
+  border-bottom: 1px solid #282c34;
+}
+
 .exp-title {
-  border-bottom: 1px solid cornflowerblue;
+  border-bottom: 1px solid #c678dd;
+}
+
+.project {
+  border: 1px solid #c678dd;
+  border-radius: 4px;
+}
+
+.project:hover, .project:focus {
+  -webkit-box-shadow: 0 0 10px 0 #c678dd;
+          box-shadow: 0 0 10px 0 #c678dd;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

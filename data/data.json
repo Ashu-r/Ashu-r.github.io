@@ -23,7 +23,22 @@
 			"university": "Babasaheb Ambedkar Technological University",
 			"degree": "Bachelor of Technology",
 			"specialization": "Computer Science Engineering",
-			"year": "2018-2022"
+			"location": "Osmanabad, Maharashtra, India",
+			"year": "2018 - 2022"
+		}
+	],
+	"projects": [
+		{
+			"title": "Auctions",
+			"description": "Auctions is a web application that allows users to bid on products.",
+			"technologies": [
+				"Django",
+				"SQLite",
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Bootstrap"
+			]
 		}
 	]
 }
