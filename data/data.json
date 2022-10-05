@@ -39,13 +39,17 @@
 				"JavaScript",
 				"Bootstrap"
 			],
-			"url": "http://ashtronaut.pythonanywhere.com/"
+			"live": "http://ashtronaut.pythonanywhere.com/",
+			"github": "https://github.com/Ashu-r/auction-django",
+			"thumbnail": "https://i.ibb.co/Nx88fSX/Screenshot-from-2022-10-05-22-39-57.png"
 		},
 		{
 			"title": "Covid Cases Tracker",
 			"description": "Simple COVID cases tracker for India. Shows data for different states, Data can be filtered, searched.",
 			"technologies": ["VueJS", "JavaScript", "HTML", "CSS"],
-			"url": "https://ashur.me/covid-tracker/"
+			"live": "https://ashur.me/covid-tracker/",
+			"github": "https://github.com/Ashu-r/covid-tracker",
+			"thumbnail": "https://i.ibb.co/vHNbNNk/Screenshot-from-2022-10-05-22-43-24.png"
 		},
 		{
 			"title": "Bloglist",
@@ -60,7 +64,9 @@
 				"JavaScript",
 				"Bootstrap"
 			],
-			"url": "https://bloglist-react.vercel.app/"
+			"live": "https://bloglist-react.vercel.app/",
+			"github": "https://github.com/Ashu-r/bloglist",
+			"thumbnail": "https://i.ibb.co/3W2mQd5/Screenshot-from-2022-10-05-22-50-16.png"
 		}
 	]
 }
