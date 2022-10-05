@@ -38,7 +38,29 @@
 				"CSS",
 				"JavaScript",
 				"Bootstrap"
-			]
+			],
+			"url": "http://ashtronaut.pythonanywhere.com/"
+		},
+		{
+			"title": "Covid Cases Tracker",
+			"description": "Simple COVID cases tracker for India. Shows data for different states, Data can be filtered, searched.",
+			"technologies": ["VueJS", "JavaScript", "HTML", "CSS"],
+			"url": "https://ashur.me/covid-tracker/"
+		},
+		{
+			"title": "Bloglist",
+			"description": "A simple bloglist application that allows users to create blogs, like blogs and comment on blogs.",
+			"technologies": [
+				"React",
+				"NodeJS",
+				"ExpressJS",
+				"MongoDB",
+				"HTML",
+				"CSS",
+				"JavaScript",
+				"Bootstrap"
+			],
+			"url": "https://bloglist-react.vercel.app/"
 		}
 	]
 }
