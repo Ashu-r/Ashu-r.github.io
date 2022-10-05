@@ -86,5 +86,18 @@ async function fetchData() {
 
 		education.parentElement.appendChild(eduDiv);
 	}
+	// projects
+	const projects = document.querySelector('.project');
+	for (let i = 0; i < data.projects.length; i++) {
+		let item = data.projects[i];
+		const projDiv = projects.cloneNode(true);
+		projDiv.classList.remove('d-none');
+		projDiv.querySelector('.project-title').innerHTML = item.title;
+		projDiv.querySelector('.project-description').innerHTML = item.description;
+		projDiv.querySelector('#project-live').href = item.live;
+		projDiv.querySelector('#project-github').href = item.github;
+		projDiv.querySelector('.project-thumbnail').src = item.thumbnail;
+		projects.parentElement.appendChild(projDiv);
+	}
 }
 fetchData();
