@@ -161,6 +161,10 @@ body .section:nth-child(odd) {
   cursor: pointer;
 }
 
+.project-title {
+  font-size: 1.5rem;
+}
+
 .project-thumbnail {
   width: 100%;
   height: 100%;
