@@ -46,7 +46,7 @@
 		{
 			"title": "Covid Cases Tracker",
 			"description": "Simple COVID cases tracker for India. Shows data for different states, Data can be filtered, searched.",
-			"technologies": ["VueJS", "JavaScript", "HTML", "CSS"],
+			"technologies": ["VueJS", "JavaScript", "HTML"],
 			"live": "https://ashur.me/covid-tracker/",
 			"github": "https://github.com/Ashu-r/covid-tracker",
 			"thumbnail": "https://i.ibb.co/vHNbNNk/Screenshot-from-2022-10-05-22-43-24.png"
@@ -57,10 +57,9 @@
 			"technologies": [
 				"React",
 				"NodeJS",
-				"ExpressJS",
+				"Express",
 				"MongoDB",
 				"HTML",
-				"CSS",
 				"JavaScript",
 				"Bootstrap"
 			],

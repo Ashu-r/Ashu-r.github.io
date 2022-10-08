@@ -169,4 +169,24 @@ body .section:nth-child(odd) {
   border-radius: 4px 4px 0 0;
   min-height: 150px;
 }
+
+.project-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-icons i {
+  font-size: 2rem;
+  margin: 5px;
+  cursor: pointer;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #282c34;
+}
+
+.project-icons i:hover, .project-icons i:focus {
+  border-bottom: 1px solid #c678dd;
+}
 /*# sourceMappingURL=style.css.map */

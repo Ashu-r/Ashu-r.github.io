@@ -97,6 +97,20 @@ async function fetchData() {
 		projDiv.querySelector('#project-live').href = item.live;
 		projDiv.querySelector('#project-github').href = item.github;
 		projDiv.querySelector('.project-thumbnail').src = item.thumbnail;
+		// Add icons from technologies property to div with class project-icons
+		const icons = projDiv.querySelector('.project-icons');
+		let daviconData = {};
+		await fetch('/data/davicon.json')
+			.then((res) => res.json())
+			.then((d) => {
+				daviconData = d;
+			});
+		for (let j = 0; j < item.technologies.length; j++) {
+			const icon = document.createElement('i');
+			icon.classList.add(...daviconData[item.technologies[j].toLowerCase()]);
+			icon.title = item.technologies[j];
+			icons.appendChild(icon);
+		}
 		projects.parentElement.appendChild(projDiv);
 	}
 }

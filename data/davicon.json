@@ -1,0 +1,13 @@
+{
+	"html": ["devicon-html5-plain-wordmark", "colored"],
+	"css": ["devicon-css3-plain-wordmark", "colored"],
+	"javascript": ["devicon-javascript-plain", "colored"],
+	"react": ["devicon-react-original-wordmark", "colored"],
+	"nodejs": ["devicon-nodejs-plain-wordmark", "colored"],
+	"express": ["devicon-express-original-wordmark"],
+	"django": ["devicon-django-plain-wordmark"],
+	"sqlite": ["devicon-sqlite-plain-wordmark", "colored"],
+	"bootstrap": ["devicon-bootstrap-plain-wordmark"],
+	"vuejs": ["devicon-vuejs-plain-wordmark", "colored"],
+	"mongodb": ["devicon-mongodb-plain-wordmark", "colored"]
+}

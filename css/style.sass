@@ -81,8 +81,8 @@ body .section:nth-child(odd)
         border: 2px solid rgba(207, 200, 200, 0.5)
 
 .exp-left, .exp-body
-    border: 1px solid $secondary-color;
-    border-radius: 4px;
+    border: 1px solid $secondary-color
+    border-radius: 4px
 
 .edu-left, .edu-body
     border: 1px solid $dark-color
@@ -92,16 +92,16 @@ body .section:nth-child(odd)
     border-bottom: 1px solid $dark-color
 
 .exp-title
-    border-bottom: 1px solid $secondary-color;
-    
-.project 
+    border-bottom: 1px solid $secondary-color
+
+.project
     display: flex
 
 .project-inner
     display: flex
     flex-direction: column
-    border: 1px solid $secondary-color;
-    border-radius: 4px;
+    border: 1px solid $secondary-color
+    border-radius: 4px
     &:hover,&:focus
         box-shadow: 0 0 10px 0 $secondary-color
         cursor: pointer
@@ -109,7 +109,18 @@ body .section:nth-child(odd)
 .project-thumbnail
     width: 100%
     height: 100%
-    object-fit: 
-    object-position: center 
+    object-position: center
     border-radius: 4px 4px 0 0
     min-height: 150px
+
+.project-icons
+    display: flex
+    flex-wrap: wrap
+    i
+        font-size: 2rem
+        margin: 5px
+        cursor: pointer
+        padding-bottom: 1px
+        border-bottom: 1px solid $dark-color
+        &:hover , &:focus
+            border-bottom: 1px solid $secondary-color
